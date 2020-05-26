@@ -6,8 +6,7 @@
                   DIW impartido por Luis Peinado Bravo del C.F.G.S DAW
                   IES Virgen del Carmen - Jáen
 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -45,36 +44,31 @@
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand" href="#"><img src="../img/logoSmall.jpg" width="100" height="90" alt=" " /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-                          <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">Inicio</a>
+                            <a href="../pages/index.html" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Categorías</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Productos protección facial</a>
-                                <a class="dropdown-item" href="#">Productos protección manos</a>
-                                <a class="dropdown-item" href="#">Productos de protección total</a>
-
+                                <a class="dropdown-item" href="../pages/categorias.html">Todas las categorías</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">La Empresa</a>
-                                <a class="dropdown-item" href="#">Trabaja con Nosotros</a>
+                                <a class="dropdown-item" href="../pages/empresa.html">La Empresa</a>
+                                <a class="dropdown-item" href="../pages/empresa.html">Trabaja con Nosotros</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Contacto</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Particulares</a>
-                                <a class="dropdown-item" href="#">Empresas</a>
-                                <a class="dropdown-item" href="#">Buzón de sugerencias</a>
-
+                                <a class="dropdown-item" href="../pages/contacto.html">Contacta con Atención al
+                                    cliente</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -88,85 +82,6 @@
                 </div>
             </nav>
         </header>
-
-        <!-- VENTANA MODAL DE LOGIN -->
-        <section class="modal " id="entrar ">
-            <div class="modal-dialog modal-dialog-centered ">
-                <div class="modal-content ">
-                    <div class="modal-header bg-primary text-white ">
-                        <div class="modal-title ">
-                            Entra en sesión
-                        </div>
-                        <span data-dismiss="modal ">X</span>
-                    </div>
-                    <form>
-                        <div class="modal-body ">
-
-                            <div class="form-group ">
-                                <label>Email:</label>
-                                <input type="text " class="form-control " placeholder="Introduce tu email ">
-                            </div>
-                            <div class="form-group ">
-                                <label>Contraseña:</label>
-                                <input type="password " class="form-control " placeholder="Introduce tu contraseña ">
-                            </div>
-                        </div>
-                        <div class="modal-footer text-right ">
-                            <input type="submit " class="btn btn-primary " value="OK ">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- VENTANA MODAL DE REGISTRO -->
-        <section class="modal " id="registro ">
-            <div class="modal-dialog ">
-                <form>
-                    <div class="modal-content ">
-                        <div class="modal-header bg-primary text-white ">
-                            <div class="modal-title ">
-                                Registro de usuario
-                            </div>
-                            <span data-dismiss="modal ">X</span>
-                        </div>
-                        <div class="modal-body ">
-                            <div class="form-group ">
-                                <label>Nombre:</label>
-                                <input type="text " class="form-control " placeholder="Introduce tu nombre " required>
-                            </div>
-                            <div class="form-group ">
-                                <label>Apellidos:</label>
-                                <input type="text " class="form-control " placeholder="Introduce tus apellidos " required>
-                            </div>
-                            <div class="form-group ">
-                                <label>Email:</label>
-                                <input type="email " class="form-control " placeholder="Introduce tu correo electrónico " required>
-                            </div>
-                            <div class="form-group ">
-                                <label>Contraseña:</label>
-                                <input type="password " class="form-control " required>
-                            </div>
-                            <div class="form-group ">
-                                <label>Sexo:</label>
-                                <div class="btn-group btn-group-toggle " data-toggle="buttons ">
-                                    <label class="btn btn-warning ">
-                                        <input type="radio " name="sexo " id="V ">Hombre
-                                    </label>
-                                    <label class="btn btn-warning ">
-                                            <input type="radio " name="sexo " id="M ">Mujer
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer text-right ">
-                            <input type="submit " class="btn btn-primary " value="Registrar ">
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </section>
 
         <!-- CARRUSEL -->
         <section class="row justify-content-center mt-5 mb-2">
@@ -207,25 +122,28 @@
         <!-- JUMBOTRON -->
         <div class="jumbotron">
             <h1 class="text-center text-black ">Ofertas Destacadas</h1>
-            <p class="text-center text-black " class="lead">Accede a nuestro catálogo de ofertas</p>
+            <a href="../pages/categorias.html">
+                <p class="text-center text-black " class="lead">Accede a nuestro catálogo completo de productos</p>
+            </a>
         </div>
 
         <!-- REDES SOCIALES FLOTANTES -->
         <div class="social-bar">
-            <a href="#" class="icon icon-twitter" target="_blank"></a>
-            <a href="#" class="icon icon-youtube" target="_blank"></a>
-            <a href="#" class="icon icon-instagram" target="_blank"></a>
+            <a href="https://twitter.com/explore" class="icon icon-twitter" target="_blank"></a>
+            <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"></a>
+            <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
         </div>
 
         <!-- CARD -->
         <section class="row justify-content-around">
             <div class="col-sm-3">
                 <div class="card">
-                    <a href="#" data-toggle="tooltip" data-html="true" title="Haz click aquí para ir a la oferta">
+                    <a href="../pages/categorias.html" data-toggle="tooltip" data-html="true" title="Haz click aquí para ver los productos">
                         <img src="../img/mascarillaoferta.jpg" class="card-img-top">
                     </a>
                     <div class="card-body">
-                        <a class="btn btn-light" data-toggle="collapse" href="#MyCollapseIDMascarilla">MASCARILLAS &#8595</a>
+                        <a class="btn btn-light" data-toggle="collapse" href="#MyCollapseIDMascarilla">MASCARILLAS
+                            &#8595</a>
                         <div class="collapse mt-5" id="MyCollapseIDMascarilla">
                             Las mascarillas son el mejor elemento de protección para evitar contagiar a terceros.
                         </div>
@@ -234,7 +152,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="card">
-                    <a href="#" data-toggle="tooltip" data-html="true" title="Haz click aquí para ir a la oferta">
+                    <a href="../pages/categorias.html" data-toggle="tooltip" data-html="true" title="Haz click aquí para ver los productos">
                         <img src="../img/guantesoferta.jpg" class="card-img-top">
                     </a>
                     <div class="card-body">
@@ -247,7 +165,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="card">
-                    <a href="#" data-toggle="tooltip" data-html="true" title="Haz click aquí para ir a la oferta">
+                    <a href="../pages/categorias.html" data-toggle="tooltip" data-html="true" title="Haz click aquí para ver los productos">
                         <img src="../img/monodibujo.jpg" class="card-img-top">
                     </a>
                     <div class="card-body">
@@ -319,13 +237,13 @@
 
 
         <!-- PIE DE PÁGINA  -->
-        <footer class="row bg-dark justify-content-center mt-3 p-3 ">
+        <footer class="row bg-dark justify-content-center mt-3 p-3 fixed-bottom">
             <h5 class="text-center text-white "> PROTEGE-T &#169</h5>
         </footer>
 
     </main>
 
-    <!-- SCRIPT PARA QUE FUNCIONE EL COMPONENTE TOOLTIP -->
+    <!-- SCRIPT PARA EL FUNCIONAMIENTO DEL TOOLTIP DE LOS CARDS -->
     <script>
         $(function() {
             $('[data-toggle="tooltip "]').tooltip({
@@ -341,10 +259,13 @@
             })
         });
     </script>
-    <!-- Enlaces a javascript, jQuerym Popper y Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <!-- Enlaces a javascript, jQuery Popper y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
+    </script>
 </body>
 
 </html>

@@ -23,103 +23,171 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<main class="container-fluid">
 
-    <main class="container-fluid">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html lang="es" xmlns="http://www.w3.org/1999/xhtml">
 
-        <!--MENU PRINCIPAL-->
-        <header class="row bg-dark justify-content-center fixed-top">
-            <h1 class="text-white">PROTEG-T</h1>
-        </header>
+    <head>
+        <meta name="keywords" content="" />
+        <meta name="description" content="Recuperación módulo DIW Benigno Cantero Martínez" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>PROTEG-T</title>
 
+        <!--Descarga de fuentes secundarias según Guía de Estilos
+        PT Sans Narrow y  Lobster   -->
+        <link href="http://allfont.es/allfont.css?fonts=lobster" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css" />
+        <!--Montserrat Bold y Montserrat Regular-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" type="text/css">
 
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/font.css" />
 
-        <!-- REDES SOCIALES FLOTANTES -->
-        <div class="social-bar">
-            <a href="#" class="icon icon-twitter" target="_blank"></a>
-            <a href="#" class="icon icon-youtube" target="_blank"></a>
-            <a href="#" class="icon icon-instagram" target="_blank"></a>
-        </div>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
 
-        <!-- REGISTRO -->
-        <h1 class="text-center">Formulario de Registro</h1>
-        <div class="row justify-content-center mt-5 mb-5">
-            <div class="col-md-6 border">
+    <body>
 
-                <form action="/action_page.php">
-                    <fieldset>
-                        <legend>Introduce tus datos:</legend>
-                        <label for="fname">Nombre:</label>
-                        <input type="text" id="fname" name="fname" placeholder="Introduce tu nombre"><br><br>
-                        <label for="lname">Apellido:</label>
-                        <input type="text" id="lname" name="lname" placeholder="Introduce tu apellido"><br><br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email"><br><br>
-                    </fieldset>
-                </form>
+        <main class="container-fluid">
 
-                <div class="form-check form-check-inline ml-4">
-                    <input type="radio" name="sexo" class="form-check-input" value="h" />
-                    <label class="form-check-label">Hombre</label>
-                </div>
-                <div class="form-check form-check-inline ml-4">
-                    <input type="radio" name="sexo" class="form-check-input" value="m" />
-                    <label class="form-check-label">Mujer</label>
-                </div>
-                <div class="form-group">
-                    <label class="col-label-sm">Seleccionar foto de perfil:</label>
-                    <input type="file" class="form-control-file" />
-                </div>
-                <div class="text-right mb-3">
-                    <input type="submit" value="Registrar" class="btn  btn-primary" />
-                </div>
+            <!--MENU PRINCIPAL-->
+            <header class="row bg-dark justify-content-center">
+                <h1 class="text-white">PROTEG-T</h1>
+            </header>
+
+            <header class="row mb-1">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" href="#"><img src="../img/logoSmall.jpg" width="100" height="90" alt=" " /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="../pages/index.html" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Categorías</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="../pages/categorias.html">Todas las categorías</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="../pages/empresa.html">La Empresa</a>
+                                    <a class="dropdown-item" href="../pages/empresa.html">Trabaja con Nosotros</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Contacto</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="../pages/contacto.html">Contacta con Atención al
+                                        cliente</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Inicio/Registro</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="./inicioSesion.html">Inicio Sesión</a>
+                                    <a class="dropdown-item" href="./registro.html">Registro nuevo usuario</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- REDES SOCIALES FLOTANTES -->
+            <div class="social-bar">
+                <a href="https://twitter.com/explore" class="icon icon-twitter" target="_blank"></a>
+                <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"></a>
+                <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
             </div>
-            </form>
-        </div>
 
-        </div>
+            <!-- REGISTRO -->
+            <h1 class="text-center">Formulario de Registro</h1>
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-md-6 border">
 
-        <script>
-            (function() {
-                //Modo Estricto
-                'use strict';
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <legend>Introduce tus datos:</legend>
+                            <label for="fname">Nombre:</label>
+                            <input type="text" id="fname" name="fname" placeholder="Introduce tu nombre"><br><br>
+                            <label for="lname">Apellido:</label>
+                            <input type="text" id="lname" name="lname" placeholder="Introduce tu apellido"><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                        </fieldset>
+                    </form>
 
-                // Cuando se acaba de cargar la página
-                window.addEventListener('load', function() {
+                    <div class="form-check form-check-inline ml-4">
+                        <input type="radio" name="sexo" class="form-check-input" value="h" />
+                        <label class="form-check-label">Hombre</label>
+                    </div>
+                    <div class="form-check form-check-inline ml-4">
+                        <input type="radio" name="sexo" class="form-check-input" value="m" />
+                        <label class="form-check-label">Mujer</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-label-sm">Seleccionar foto de perfil:</label>
+                        <input type="file" class="form-control-file" />
+                    </div>
+                    <div class="text-right mb-3">
+                        <input type="submit" value="Registrar" class="btn  btn-primary" />
+                    </div>
+                </div>
+                </form>
+            </div>
 
-                    //Seleccionamos los formularios que quiero validar
-                    var forms = document.getElementsByClassName('validar');
-                    console.log(forms.length);
-                    // Los recorro y evito que se manden los datos
-                    var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('submit', function(event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
+            </div>
 
-            })();
+            <script>
+                (function() {
+                    //Modo Estricto
+                    'use strict';
+
+                    // Cuando se acaba de cargar la página
+                    window.addEventListener('load', function() {
+
+                        //Seleccionamos los formularios que quiero validar
+                        var forms = document.getElementsByClassName('validar');
+                        console.log(forms.length);
+                        // Los recorro y evito que se manden los datos
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+
+                })();
+            </script>
+
+            <!-- PIE DE PÁGINA  -->
+            <footer class="row bg-dark justify-content-center mt-3 p-3 fixed-bottom">
+                <h5 class=" text-center text-white "> PROTEGE-T &#169</h5>
+            </footer>
+
+        </main>
+
+        <!-- Enlaces a javascript, jQuerym Popper y Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
+        </script>
+    </body>
 
-        <!-- PIE DE PÁGINA  -->
-        <footer class="row bg-dark justify-content-center mt-3 p-3 fixed-bottom">
-            <h5 class=" text-center text-white "> PROTEGE-T &#169</h5>
-        </footer>
-
-    </main>
-
-    <!-- Enlaces a javascript, jQuerym Popper y Bootstrap JS -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
-    </script>
-</body>
-
-</html>
+    </html>
