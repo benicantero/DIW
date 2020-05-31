@@ -18,6 +18,8 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/font.css" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -34,7 +36,7 @@
 
         <header class="row mb-1">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="#"><img src="../img/logoSmall.jpg" width="100" height="90" alt=" " /></a>
+                <a class="navbar-brand" href="../pages/index.html"><img src="../img/logos/logoSmall.jpg" width="100" height="90" alt=" " /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,16 +46,9 @@
                             <a href="../pages/index.html" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Categorías</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Catálogo de Productos</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../pages/categorias.html">Todas las categorías</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../pages/empresa.html">La Empresa</a>
-                                <a class="dropdown-item" href="../pages/empresa.html">Trabaja con Nosotros</a>
+                                <a class="dropdown-item" href="../pages/categorias.html">Todos los productos</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -61,13 +56,15 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="../pages/contacto.html">Contacta con Atención al
                                     cliente</a>
+                                <a class="dropdown-item" href="../pages/trabajaConNosotros.html">Trabaja con
+                                        Nosotros</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Inicio/Registro</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="./inicioSesion.html">Inicio Sesión</a>
-                                <a class="dropdown-item" href="./registro.html">Registro nuevo usuario</a>
+                                <a class="dropdown-item" href="../pages/inicioSesion.html">Inicio Sesión</a>
+                                <a class="dropdown-item" href="../pages/registro.html">Registro nuevo usuario</a>
                             </div>
                         </li>
                     </ul>
@@ -75,9 +72,57 @@
             </nav>
         </header>
 
+        <!-- REDES SOCIALES FLOTANTES -->
+        <div class="social-bar">
+            <a href="https://twitter.com/explore" class="icon icon-twitter" target="_blank"></a>
+            <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"></a>
+            <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
+        </div>
+
+        <!-- FORMULARIO SOLICITUD DE TRABAJO -->
+
+        <section class="row justify-content-around">
+
+            <div class="container">
+                <header class="row bg-dark justify-content-center mt-3 mb-3 ">
+                    <h5 class=" text-white ">Estimado cliente. Rellene los datos del siguiente formulario para contactar con nosotros</h5>
+                </header>
+                <div class="form__top">
+                    <h2>Contacto con Atención al cliente</h2>
+                </div>
+                <form class="form__reg" method="#" action="" enctype="multipart/form-data">
+                    <input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
+                    <input class="input" type="email" placeholder="&#9993;  Email" required>
+                    <input class="input" type="text" placeholder="&#128222;  Telefono" required>
+                    <input class="input" type="text" placeholder="&#8962;  Motivo de la consulta" required>
+                    <div class="btn__form">
+                        <input class="btn__submit" type="submit" value="ENVIAR SOLICITUD CONTACTO">
+                        <input class="btn__reset" type="reset" value="LIMPIAR FORMULARIO">
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+
         <!-- PIE DE PÁGINA  -->
         <footer class="row bg-dark justify-content-center mt-3 p-3 fixed-bottom">
             <h5 class="text-center text-white "> PROTEGE-T &#169</h5>
         </footer>
+
     </main>
+
+    <!-- Enlaces a javascript, jQuery Popper y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
+    </script>
 </body>
+
+</html>
